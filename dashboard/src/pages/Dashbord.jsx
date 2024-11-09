@@ -8,7 +8,8 @@ import { useContext, useEffect, useState } from "react";
 
 import { FBContext } from '../../context/FBContext';
 import images from '../assets/Assets';
-import TotalFeedback from '../components/totalFeedback';
+import TotalFeedback from '../components/TotalFeedback';
+// import TotalFeedback from '../components/totalFeedback';
 
 
 const Dashbord = () => {
