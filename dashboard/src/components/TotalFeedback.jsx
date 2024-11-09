@@ -1,10 +1,10 @@
 import { useContext } from "react"
-import images from "../assets/Assets"
-import { FBContext } from "../../context/FBContext"
 
+import { FBContext } from "../../context/FBContext"
+import PropTypes from 'prop-types';
 
 const TotalFeedback = ({count, image, userType}) => {
-    const { FBCount, CountingNumber } = useContext(FBContext)
+    const {  CountingNumber } = useContext(FBContext)
     return (
         <div className="w-[420px] h-[230px] bg-white sm: mb-5 xl:mb-0  rounded-2xl flex flex-col px-10 pb-10" >
             <h2 className="text-green-800 mt-11 uppercase text-2xl mb-5 font-medium" >total {userType} feedbacks</h2>
@@ -19,5 +19,11 @@ const TotalFeedback = ({count, image, userType}) => {
         </div>
     )
 }
+
+TotalFeedback.propTypes = {
+    count: PropTypes.number.isRequired, 
+    image: PropTypes.string.isRequired,
+    userType: PropTypes.string.isRequired,
+  };
 
 export default TotalFeedback
