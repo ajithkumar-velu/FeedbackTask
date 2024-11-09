@@ -32,7 +32,7 @@ const PieChart = () => {
     const fetchData = async () => {
         const response = await axios.get(backendUrl + '/api/feedback/rating')
         
-        let rating = response.data.map(item => item.rating + " Rating")
+        let rating = response.data.map(item => item._id + " Rating")
         let count = response.data.map(item => item.count)
         setRatingData({ rating: rating, count: count })
     }

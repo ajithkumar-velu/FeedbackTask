@@ -1,6 +1,8 @@
-import pool from "../db.js";
+import pool from "../config/db.js";
 
 
+
+//  add feedback
 
 const addFeedback = async (req, res) => {
     try {
