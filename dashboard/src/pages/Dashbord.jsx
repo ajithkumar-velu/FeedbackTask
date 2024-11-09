@@ -12,7 +12,7 @@ import images from '../assets/Assets';
 const Dashbord = () => {
 
     const [latestFeedbackData, setlatestFeedbackData] = useState([])
-    const { FBCount, countOfSeller, countOfCustomer } = useContext(FBContext)
+    const { countOfSeller, countOfCustomer } = useContext(FBContext)
 
 
 
