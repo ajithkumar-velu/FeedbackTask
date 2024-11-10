@@ -41,16 +41,16 @@ const Dashbord = () => {
     return latestFeedbackData[0] && (
         <div className="px-[4%] w-full bg-slate-100 pt-10" >
             <p className='md:text-4xl text-2xl font-bold  mb-12' >Feedback Dashbord</p>
-            <div className='flex items-center justify-center flex-col mb-10 2xl:flex-row 2xl:gap-5' >
-
+            <div /*className='flex items-center justify-center flex-col mb-10 2xl:flex-row 2xl:gap-5'*/ className='w-full flex flex-col items-center gap-10 md:grid grid-cols-2 xl:grid-cols-4  w-full h-full md:mb-10' >
+{/* 
                 <div className='flex flex-col lg:flex-row gap-5 2xl:gap-5' >
-                    <p><LastReview card={latestFeedbackData[0]} /></p>
-                    <p><LastReview card={latestFeedbackData[1]} /></p>
                 </div>
                 <div className='flex flex-col lg:flex-row 2xl:gap-5' >
+                </div> */}
+                    <p><LastReview card={latestFeedbackData[0]} /></p>
+                    <p><LastReview card={latestFeedbackData[1]} /></p>
                     <p><TotalFeedback count={countOfSeller} userType={"sellers"} image={images.seller_icon} /></p>
                     <p><TotalFeedback count={countOfCustomer} userType={'customers'} image={images.customers_icon} /></p>
-                </div>
             </div>
             <div className='xl:flex justify-evenly' >
 

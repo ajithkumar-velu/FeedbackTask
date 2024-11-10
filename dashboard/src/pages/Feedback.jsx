@@ -53,11 +53,11 @@ const Feedback = () => {
                     {/* <label htmlFor="rating" className="text-start text-gray-600 text-md w-full"><p>Rate your experience 1 to 5</p><input id="rating" className="w-full" required onChange={(e) => setRating(e.target.value)} value={rating} type="range" min="1" max="5" /></label> */}
                     <p className="text-start text-gray-600 text-md w-full font-medium" >RATE 1 TO 5</p>
                     <div className="flex gap-10 justify-center items-center" >
-                        <img onClick={()=>setRating(1)} className="cursor-pointer w-[40px] h-[40px]" src={rating>=1? images.star_Icon : images.star_dull_icon} alt="" />
-                        <img onClick={()=>setRating(2)} className="cursor-pointer w-[40px] h-[40px]" src={rating>=2? images.star_Icon : images.star_dull_icon} alt="" />
-                        <img onClick={()=>setRating(3)} className="cursor-pointer w-[40px] h-[40px]" src={rating>=3? images.star_Icon : images.star_dull_icon} alt="" />
-                        <img onClick={()=>setRating(4)} className="cursor-pointer w-[40px] h-[40px]" src={rating>=4? images.star_Icon : images.star_dull_icon} alt="" />
-                        <img onClick={()=>setRating(5)} className="cursor-pointer w-[40px] h-[40px]" src={rating==5? images.star_Icon : images.star_dull_icon} alt="" />
+                        <img onClick={()=>setRating(1)} className="cursor-pointer w-full max-w-[40px] max-h-[40px]" src={rating>=1? images.star_Icon : images.star_dull_icon} alt="" />
+                        <img onClick={()=>setRating(2)} className="cursor-pointer w-full max-w-[40px] max-h-[40px]" src={rating>=2? images.star_Icon : images.star_dull_icon} alt="" />
+                        <img onClick={()=>setRating(3)} className="cursor-pointer w-full max-w-[40px] max-h-[40px]" src={rating>=3? images.star_Icon : images.star_dull_icon} alt="" />
+                        <img onClick={()=>setRating(4)} className="cursor-pointer w-full max-w-[40px] max-h-[40px]" src={rating>=4? images.star_Icon : images.star_dull_icon} alt="" />
+                        <img onClick={()=>setRating(5)} className="cursor-pointer w-full max-w-[40px] max-h-[40px]" src={rating==5? images.star_Icon : images.star_dull_icon} alt="" />
                     </div>
                     
                     <textarea required onChange={(e) => setComment(e.target.value)} value={comment} className="px-3 py-2 border border-gray-300"placeholder="Write comment here"></textarea>
