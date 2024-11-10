@@ -85,7 +85,9 @@ const Char = () => {
     return (
         <div className="mb-32 ">
             <div className="flex flex-col items-center gap-10 md:flex-row md:gap-5">
+
                 <div>
+                    <h2 className="text-2xl text-gray-700 mb-3">Filter</h2>
                     <div>
                         <DatePicker
                             className="border-2 px-3 w-[250px] py-2 border-gray-400"
