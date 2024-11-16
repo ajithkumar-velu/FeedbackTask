@@ -44,36 +44,6 @@ const PieChart = () => {
 
     }, [])
 
-
-    const options = {
-        responsive: true,
-        plugins: {
-            legend: {
-                position: 'top'
-            },
-            title: {
-                display: true,
-                text: "Some text"
-            }
-        }
-    }
-
-    const data = {
-        labels: ['Jan', 'Feb', 'Mar'],
-        datasets: [
-            {
-                label: "present",
-                data: [11, 13, 12],
-                backgroundColor: 'rgba(255, 99, 132, 0.5'
-            },
-            {
-                label: "Absent",
-                data: [4, 2, 3],
-                backgroundColor: 'rgba(53, 162, 235, 0.5'
-            }
-        ]
-    }
-
     const data1 = {
         labels: ratingsData.rating,
         datasets: [
