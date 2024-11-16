@@ -49,7 +49,7 @@ const Feedback = () => {
                 <div className="flex flex-col gap-5" >
 
                     <input onChange={(e) => setName(e.target.value)} value={name} className="px-3 py-2 border border-gray-300" type="text" placeholder="Name" />
-                    <input onChange={(e) => setEamil(e.target.value)} value={email} className="px-3 py-2 border border-gray-300" placeholder="Email" />
+                    <input onChange={(e) => setEamil(e.target.value)} value={email} className="px-3 py-2 border border-gray-300" type="email" placeholder="Email" />
                     {/* <label htmlFor="rating" className="text-start text-gray-600 text-md w-full"><p>Rate your experience 1 to 5</p><input id="rating" className="w-full" required onChange={(e) => setRating(e.target.value)} value={rating} type="range" min="1" max="5" /></label> */}
                     <p className="text-start text-gray-600 text-md w-full font-medium" >RATE 1 TO 5</p>
                     <div className="flex gap-10 justify-center items-center" >
